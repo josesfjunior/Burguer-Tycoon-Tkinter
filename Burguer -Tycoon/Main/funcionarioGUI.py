@@ -59,6 +59,7 @@ def funcionario():
     lanche_id = Label(janela_funcionario,text = "Numero do Lanche:", font = Font_Label, fg = "#FA8072")
     lanche_id.place(x = 380, y = 20)
     
+    
     janela_funcionario.title("Burgue Tycon")
     janela_funcionario.geometry("1000x300+100+100")
     janela_funcionario.mainloop()
