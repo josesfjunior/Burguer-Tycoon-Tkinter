@@ -1,3 +1,3 @@
-Rode o Arquivo GUI.py que está dentro da pasta 'Main' para usar o sistema
+Rode o Arquivo Main.py que está dentro da pasta 'Main' para usar o sistema
 
 E faça um Restore do Servidor, estou usando o Postegreesql o arquivo tá compactado em .zip, só extrair e fazer um Restore
