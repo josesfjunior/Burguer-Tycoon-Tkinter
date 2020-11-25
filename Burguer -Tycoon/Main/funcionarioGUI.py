@@ -18,6 +18,7 @@ def funcionario():
         recebe_id = lista_id.get(ACTIVE)
         update_status(querry.format(recebe_id))
         janela_funcionario.destroy()
+        funcionario()
         
 
     comando = """Select * from pedido
@@ -58,6 +59,11 @@ def funcionario():
     nome_cliente.place(x = 193, y = 20)
     lanche_id = Label(janela_funcionario,text = "Numero do Lanche:", font = Font_Label, fg = "#FA8072")
     lanche_id.place(x = 380, y = 20)
+    quantidade_nome= Label(janela_funcionario,text = "Quantidade:", font = Font_Label, fg = "#FA8072")
+    quantidade_nome.place(x= 600, y = 20)
+    status_nome = Label(janela_funcionario,text = "Status:", font = Font_Label, fg = "#FA8072")
+    status_nome.place(x = 830, y =20)
+    
     
     
     janela_funcionario.title("Burgue Tycon")
