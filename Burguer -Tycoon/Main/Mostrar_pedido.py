@@ -44,4 +44,3 @@ def listagem_de_pedidos_feitos():
     janela_pedidos.geometry("660x300")
     janela_pedidos.mainloop()
 
-listagem_de_pedidos_feitos()

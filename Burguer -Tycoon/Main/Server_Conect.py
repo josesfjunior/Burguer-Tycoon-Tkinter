@@ -2,7 +2,7 @@ import psycopg2
 
 
 connection  = ''
-connection_string = "dbname = 'Burguer Tycon' user = 'postgres' password = 'SUA_SENHA' host = 'localhost'"
+connection_string = "dbname = 'Burguer Tycon' user = 'postgres' password = 'junior123' host = 'localhost'"
 connection = psycopg2.connect(connection_string)
 
 

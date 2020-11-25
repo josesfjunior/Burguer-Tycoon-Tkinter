@@ -67,4 +67,3 @@ def cardapio_click():
     menu_cardapio.geometry("660x300+100+100")
     menu_cardapio.mainloop()
 
-cardapio_click()
