@@ -70,4 +70,3 @@ def funcionario():
     janela_funcionario.geometry("1000x300+100+100")
     janela_funcionario.mainloop()
 
-funcionario()
