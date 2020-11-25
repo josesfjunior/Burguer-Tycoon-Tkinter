@@ -8,8 +8,8 @@ from tkinter import font
 def listagem_de_pedidos_feitos():
     janela_pedidos = Tk()
     Font_Listbox = font.Font(family = "Rockwell", size = 15)
-    Font_Label = font.Font(family = "Rockwell", size = 13)
-
+    Font_Label = font.Font(family = "Rockwell", size = 40)
+    #fecha a guia e abre denovo alem de atualizar ela
     def enviar_e_atualizar():
         
         querry = """UPDATE pedido 
@@ -24,10 +24,13 @@ def listagem_de_pedidos_feitos():
     pedidos_prontos = select_com_retorno_geral(comando)
     print(pedidos_prontos)
     
-    pedido_id = Listbox(janela_pedidos,activestyle = 'dotbox', height = 5, font = Font_Listbox, fg = "green")
-    pedido_id.place(x=1, y = 50)
-    nome_pedido = Listbox(janela_pedidos,activestyle = 'dotbox', height = 5, font = Font_Listbox, fg = "green")
-    nome_pedido.place(x = 230, y =50)
+    pedido_id = Listbox(janela_pedidos,activestyle = 'dotbox', height = 5, font = Font_Listbox, fg = "#00FF00",bg = "#004080")
+    pedido_id.place(x=120, y = 80)
+    nome_pedido = Listbox(janela_pedidos,activestyle = 'dotbox', height = 5, font = Font_Listbox, fg = "#00FF00",bg = "#004080")
+    nome_pedido.place(x = 350, y =80)
+
+    nome = Label(janela_pedidos, text ="PEDIDOS PRONTOS", fg ="#FA8072", bg = "#004080", font = Font_Label)
+    nome.place(x = 100, y = 5)
 
     for pedido in pedidos_prontos:
         pedido_id.insert(END,pedido[0])
@@ -40,7 +43,8 @@ def listagem_de_pedidos_feitos():
     sair.place(x = 5 ,y = 250)
 
 
-
-    janela_pedidos.geometry("660x300")
+    janela_pedidos["bg"] = "#004080"
+    janela_pedidos.geometry("660x300+440+120")
     janela_pedidos.mainloop()
 
+listagem_de_pedidos_feitos()
