@@ -4,7 +4,7 @@ def verificar_id(verificador):
     if(verificacao == "Passaporte"):
         lancheid = 1
         return lancheid
-    if(verificacao == "File de Alcatra"):
+    if(verificacao == "Filé de Alcatra"):
         lancheid = 2
         return lancheid
       

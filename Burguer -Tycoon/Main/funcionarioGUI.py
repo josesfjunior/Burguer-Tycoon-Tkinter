@@ -10,8 +10,6 @@ def funcionario():
     Font_Label = font.Font(family = "Rockwell", size = 13)
 
 
-    
-
     def enviar_e_atualizar():
         
         querry = """UPDATE pedido 
@@ -54,10 +52,15 @@ def funcionario():
     sair.place(x = 5 ,y = 250)
 
 #labels de textos
-    id_pedido = Label(janela_funcionario,text = "Numero do Pedido :", font = Font_Label, fg = "#FA8072" )
-    id_pedido.place(x = 10, y = 20)
+    id_pedido = Label(janela_funcionario,text = "Numero do Pedido:", font = Font_Label, fg = "#FA8072" )
+    id_pedido.place(x = 2, y = 20)
+    nome_cliente = Label(janela_funcionario,text = "Nome do Cliente:", font = Font_Label, fg = "#FA8072")
+    nome_cliente.place(x = 193, y = 20)
+    lanche_id = Label(janela_funcionario,text = "Numero do Lanche:", font = Font_Label, fg = "#FA8072")
+    lanche_id.place(x = 380, y = 20)
     
     janela_funcionario.title("Burgue Tycon")
     janela_funcionario.geometry("1000x300+100+100")
     janela_funcionario.mainloop()
 
+funcionario()
