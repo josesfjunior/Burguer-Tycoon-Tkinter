@@ -1,3 +1,5 @@
 Rode o Arquivo Main.py que está dentro da pasta 'Main' para usar o sistema
 
 E faça um Restore do Servidor, estou usando o Postegreesql o arquivo tá compactado em .zip, só extrair e fazer um Restore
+
+Usei também as bibliotecas psycopg2 e o proprio tkinter, lembre-se de verificar se eles estão na sua maquina 
