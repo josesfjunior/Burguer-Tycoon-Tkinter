@@ -20,13 +20,15 @@ def listagem_de_pedidos_feitos():
         janela_pedidos.destroy()
         listagem_de_pedidos_feitos()
 
+
+
     comando = """select * from pedido where status = 'P' order by pedidoid"""
     pedidos_prontos = select_com_retorno_geral(comando)
     print(pedidos_prontos)
     
-    pedido_id = Listbox(janela_pedidos,activestyle = 'dotbox', height = 5, font = Font_Listbox, fg = "#00FF00",bg = "#004080")
+    pedido_id = Listbox(janela_pedidos,activestyle = 'dotbox', height = 5, font = Font_Listbox, fg = "#00FF00",bg = "white")
     pedido_id.place(x=120, y = 80)
-    nome_pedido = Listbox(janela_pedidos,activestyle = 'dotbox', height = 5, font = Font_Listbox, fg = "#00FF00",bg = "#004080")
+    nome_pedido = Listbox(janela_pedidos,activestyle = 'dotbox', height = 5, font = Font_Listbox, fg = "#00FF00",bg = "white")
     nome_pedido.place(x = 350, y =80)
 
     nome = Label(janela_pedidos, text ="PEDIDOS PRONTOS", fg ="#FA8072", bg = "#004080", font = Font_Label)
@@ -47,4 +49,3 @@ def listagem_de_pedidos_feitos():
     janela_pedidos.geometry("660x300+440+120")
     janela_pedidos.mainloop()
 
-listagem_de_pedidos_feitos()
