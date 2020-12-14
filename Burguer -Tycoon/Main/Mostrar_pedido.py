@@ -12,9 +12,7 @@ def listagem_de_pedidos_feitos():
     #fecha a guia e abre denovo alem de atualizar ela
     def enviar_e_atualizar():
         
-        querry = """UPDATE pedido 
-        SET status = 'R'
-        where pedidoid = '{}'"""
+        querry = """UPDATE pedido SET status = 'R' where pedidoid = '{}'"""
         recebe_id = pedido_id.get(ACTIVE)
         update_status(querry.format(recebe_id))
         janela_pedidos.destroy()

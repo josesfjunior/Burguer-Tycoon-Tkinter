@@ -3,7 +3,7 @@ import psycopg2
 
 connection  = ''
 connection_string = "dbname = 'Burguer Tycon' user = 'postgres' password = 'junior123' host = 'localhost'"
-connection = psycopg2.connect(connection_string)
+
 
 
 def conexao():
@@ -51,7 +51,7 @@ def conexao_de_insert(querry):
     connection.commit()
     executar.close()
     connection.close()
-    return print("Foi, Aeee, uhuuu,fiiiiiiiiiiiiiiii, pow, pow, pow, tamtamtam pam pam pam")
+    return print("Foi")
 
 def update_status(querry):
     connection = psycopg2.connect(connection_string)
@@ -61,4 +61,4 @@ def update_status(querry):
     connection.commit()
     executar.close()
     connection.close()
-    return print('FOi')
+    return print('Foi')

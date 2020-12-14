@@ -35,6 +35,7 @@ def main():
     Adm_Button = Button(width = 10 , height =5, text = "Pagina Adm", font = Font_Buttons, bg= "#FA8072", fg = "Black" ,
     command = Button_Click, bd= 4)
     Adm_Button.place(x = 10, y = 100)
+    
 
     cliente_button= Button(width = 10 , height =5, text = "Pagina Cliente", font = Font_Buttons, bg= "#FA8072", fg = "Black" ,
     command = abrir_gui_cliente, bd= 4)

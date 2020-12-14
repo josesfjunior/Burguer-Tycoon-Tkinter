@@ -12,7 +12,7 @@ def verificar_id(verificador):
         lancheid = 3
         return lancheid
     
-    if(verificacao == "X-TUDO"):
+    if(verificacao == "X-Tudo"):
         lancheid = 4
         return lancheid
 
@@ -41,7 +41,7 @@ def verificar_id(verificador):
         lancheid = 10
         return lancheid
 
-    if(verificacao == "Suco 1L"):
+    if(verificacao == "Suco Jarra"):
         lancheid = 11
         return lancheid
     
